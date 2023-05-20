@@ -8,6 +8,7 @@
         - make
         - perl
         - git
+        - curl
         - mc
         - vlc
         - telegram-desktop

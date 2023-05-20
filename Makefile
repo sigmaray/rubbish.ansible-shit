@@ -21,3 +21,6 @@ obs:
 
 viber:
 	ansible-playbook viber.yml
+
+nvm:
+	ansible-playbook nvm.yml
