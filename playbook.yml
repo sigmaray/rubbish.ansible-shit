@@ -1,0 +1,15 @@
+- hosts: localhost
+  become: yes
+  tasks: 
+  - name: Install a list of packages
+    apt:
+      pkg:
+        - gcc
+        - make
+        - perl
+        - git
+        - mc
+        - vlc
+        - telegram-desktop
+        - obs-studio
+        - flameshot

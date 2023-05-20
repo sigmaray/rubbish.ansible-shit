@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+    - name: Install Viber via downloadable deb
+      apt:
+        deb: https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
