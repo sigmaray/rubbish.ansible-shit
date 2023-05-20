@@ -1,0 +1,5 @@
+# ansible-galaxy install gantsign.visual-studio-code
+- hosts: localhost
+  become: true
+  roles:
+    - role: gantsign.visual-studio-code
