@@ -1,0 +1,31 @@
+# ---
+
+# - name: Install RVM
+#   hosts: localhost
+
+#   roles:
+#     - { role: rvm.ruby,
+#         tags: ruby,
+#         rvm1_user: 'foobar'
+#       }
+
+- name: RVM
+  hosts: localhost
+  tasks:
+    - name: Install RVM
+      shell: >
+        curl -sSL https://get.rvm.io | bash -s stable
+      args:
+        executable: /bin/bash
+        chdir: "$HOME"
+        creates: "$HOME/.rvm/bin/rvm"
+    - name: Install ruby
+      become: no
+      ansible.builtin.shell: >
+        /bin/bash -c "source ~/.rvm/bin/rvm && rvm install {{ item }} && rvm --default use {{ item }}"
+      args:
+        executable: /bin/bash
+        chdir: "{{ ansible_env.HOME }}"
+        creates: "{{ ansible_env.HOME }}/.nvm/versions/ruby-{{ item }}"
+      loop:
+        - 3.2.2

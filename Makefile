@@ -1,7 +1,7 @@
 install-deps:
 	# ansible-galaxy install gantsign.visual-studio-code
 	# ansible-galaxy install mhalano.skypeforlinux
-	ansible-galaxy install mhalano.skypeforlinux gantsign.visual-studio-code robertdebock.obsproject
+	ansible-galaxy install mhalano.skypeforlinux gantsign.visual-studio-code robertdebock.obsproject rvm.ruby
 	# wtanaka.slack
 
 skype:
@@ -24,3 +24,6 @@ viber:
 
 nvm:
 	ansible-playbook nvm.yml
+
+rvm:
+	ansible-playbook rvm.yml
