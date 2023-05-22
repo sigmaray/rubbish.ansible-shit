@@ -1,0 +1,6 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install Mongodb compass
+      apt:
+        deb: https://downloads.mongodb.com/compass/mongodb-compass_1.36.4_amd64.deb

@@ -24,3 +24,8 @@
         - deluge
         - ncdu
         - remmina
+        - virtualbox
+        # - virtualbox—ext–pack
+        # - pgadmin3 
+        - mysql-workbench
+
