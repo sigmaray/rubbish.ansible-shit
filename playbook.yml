@@ -1,6 +1,12 @@
 - hosts: localhost
   become: yes
   tasks: 
+  - name: Remove transmission packages
+    ansible.builtin.apt: pkg={{item}} state=absent
+    with_items:
+      - transmission
+      - transmission-common
+      - transmission-gtk
   - name: Install a list of packages
     apt:
       pkg:
@@ -15,3 +21,6 @@
         - telegram-desktop
         - obs-studio
         - flameshot
+        - deluge
+        - ncdu
+        - remmina
