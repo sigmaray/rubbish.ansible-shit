@@ -27,3 +27,6 @@ nvm:
 
 rvm:
 	ansible-playbook rvm.yml
+
+asdf:
+	ansible-playbook asdf.yml
