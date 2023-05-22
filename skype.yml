@@ -1,4 +1,5 @@
 # ansible-galaxy install mhalano.skypeforlinux
 - hosts: localhost
+  become: true
   roles:
      - role: mhalano.skypeforlinux

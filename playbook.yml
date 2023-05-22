@@ -27,5 +27,4 @@
         - virtualbox
         # - virtualbox—ext–pack
         # - pgadmin3 
-        - mysql-workbench
-
+        # - mysql-workbench

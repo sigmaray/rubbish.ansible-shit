@@ -1,8 +1,14 @@
+# install-deps:
+# 	# ansible-galaxy install gantsign.visual-studio-code
+# 	# ansible-galaxy install mhalano.skypeforlinux
+# 	ansible-galaxy install mhalano.skypeforlinux gantsign.visual-studio-code robertdebock.obsproject rvm.ruby don_rumata.ansible_role_install_virtualbox
+# 	# wtanaka.slack
+
 install-deps:
-	# ansible-galaxy install gantsign.visual-studio-code
-	# ansible-galaxy install mhalano.skypeforlinux
-	ansible-galaxy install mhalano.skypeforlinux gantsign.visual-studio-code robertdebock.obsproject rvm.ruby don_rumata.ansible_role_install_virtualbox
-	# wtanaka.slack
+	ansible-galaxy install -r requirements.yml
+
+all:
+	ansible-playbook all.yml --ask-become-pass
 
 chrome:
 	ansible-playbook chrome.yml --ask-become-pass

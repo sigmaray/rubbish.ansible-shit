@@ -1,5 +1,5 @@
----
-- name: pbs
-  hosts: localhost
-  roles:
-    - role: robertdebock.obsproject
+# ---
+# - name: pbs
+#   hosts: localhost
+#   roles:
+#     - role: robertdebock.obsproject

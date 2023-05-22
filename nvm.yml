@@ -1,5 +1,6 @@
 - name: Install nodejs
   hosts: localhost
+  become: false
   tasks:
     - name: Install nvm
       become: no

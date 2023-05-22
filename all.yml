@@ -1,0 +1,12 @@
+- import_playbook: playbook.yml
+- import_playbook: rvm.yml
+- import_playbook: nvm.yml
+- import_playbook: asdf.yml
+- import_playbook: chrome.yml
+- import_playbook: mongodb-compass.yml
+- import_playbook: pgadmin.yml
+- import_playbook: skype.yml
+- import_playbook: slack.yml
+- import_playbook: zoom.yml
+- import_playbook: viber.yml
+- import_playbook: vscode.yml

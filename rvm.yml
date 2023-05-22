@@ -11,6 +11,7 @@
 
 - name: RVM
   hosts: localhost
+  become: false
   tasks:
     - name: Install RVM
       shell: >
@@ -20,7 +21,7 @@
         chdir: "$HOME"
         creates: "$HOME/.rvm/bin/rvm"
     - name: Install ruby
-      become: no
+      # become: no
       ansible.builtin.shell: >
         /bin/bash -c "source ~/.rvm/bin/rvm && rvm install {{ item }} && rvm --default use {{ item }}"
       args:

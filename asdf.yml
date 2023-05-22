@@ -1,5 +1,6 @@
 - name: ASDF
   hosts: localhost
+  become: false
   tasks:
     - name: Install ASDF
       shell: >

@@ -1,4 +1,5 @@
 - hosts: localhost
+  become: true
   tasks:
     - name: Install Slack via snap
       snap:
