@@ -20,7 +20,7 @@
       args:
         executable: /bin/bash
         chdir: "$HOME"
-        creates: "$HOME/.rvm/bin/rvm"
+        creates: "$HOME/.rvm"
     - name: Install ruby
       # become: no
       ansible.builtin.shell: >
