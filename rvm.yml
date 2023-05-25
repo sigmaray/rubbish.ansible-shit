@@ -24,7 +24,7 @@
     - name: Install ruby
       # become: no
       ansible.builtin.shell: >
-        /bin/bash -c "source ~/.rvm/bin/rvm && rvm install {{ item }} && rvm --default use {{ item }}"
+        bash -c "source ~/.rvm/bin/rvm && rvm install {{ item }} && rvm --default use {{ item }}"
       args:
         executable: /bin/bash
         chdir: "{{ ansible_env.HOME }}"
