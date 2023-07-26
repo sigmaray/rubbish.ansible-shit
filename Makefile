@@ -51,3 +51,6 @@ pgadmin:
 
 mongodb-compass:
 	ansible-playbook mongodb-compass.yml --ask-become-pass
+
+fetch-github-stable:
+	ansible-playbook fetch-github-stable.yml

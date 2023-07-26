@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  become: true
+
+  tasks:
+    - name: Creates directory
+      file:
+        path: ~/r/stable
+        state: directory
+
+    - name: fetch from github
+      git:
+        repo: https://github.com/sigmaray/pyqtstopwatch.git
+        dest: ~/r/stable
