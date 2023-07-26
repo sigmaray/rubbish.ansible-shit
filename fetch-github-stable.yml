@@ -10,3 +10,8 @@
       git:
         repo: https://github.com/sigmaray/pyqtstopwatch.git
         dest: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch"
+
+    # Install specified python requirements in indicated (virtualenv).
+    - pip:
+        requirements: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch/requirements.txt"
+        virtualenv: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch/.venv"
