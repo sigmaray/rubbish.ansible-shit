@@ -1,4 +1,4 @@
-- import_playbook: playbook.yml
+- import_playbook: general.yml
 - import_playbook: rvm.yml
 - import_playbook: nvm.yml
 - import_playbook: asdf.yml

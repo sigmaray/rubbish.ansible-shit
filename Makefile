@@ -22,8 +22,8 @@ vscode:
 slack:
 	ansible-playbook slack.yml --ask-become-pass
 
-playbook:
-	ansible-playbook playbook.yml --ask-become-pass
+general:
+	ansible-playbook general.yml --ask-become-pass
 
 # obs:
 # 	ansible-playbook obs.yml
