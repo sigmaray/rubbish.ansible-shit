@@ -1,3 +1,4 @@
+- import_playbook: docker.yml
 - import_playbook: general.yml
 - import_playbook: rvm.yml
 - import_playbook: nvm.yml

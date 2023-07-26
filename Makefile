@@ -10,6 +10,9 @@ install-deps:
 all:
 	ansible-playbook all.yml --ask-become-pass
 
+docker:
+	ansible-playbook docker.yml --ask-become-pass
+
 chrome:
 	ansible-playbook chrome.yml --ask-become-pass
 
