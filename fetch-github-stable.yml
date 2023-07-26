@@ -5,10 +5,10 @@
   tasks:
     - name: Creates directory
       file:
-        path: ~/r/stable
+        path: "{{ ansible_env.HOME }}/r/stable"
         state: directory
 
     - name: fetch from github
       git:
         repo: https://github.com/sigmaray/pyqtstopwatch.git
-        dest: ~/r/stable
+        dest: "{{ ansible_env.HOME }}/r/stable"
