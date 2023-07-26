@@ -6,12 +6,22 @@
         path: "{{ ansible_env.HOME }}/r/stable"
         state: directory
 
-    - name: fetch from github
+    - name: fetch pyqtstopwatch from github
       git:
         repo: https://github.com/sigmaray/pyqtstopwatch.git
         dest: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch"
 
-    # Install specified python requirements in indicated (virtualenv).
-    - pip:
+    - name: pip install
+      pip:
         requirements: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch/requirements.txt"
-        virtualenv: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch/.venv"
+        # virtualenv: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch/.venv"
+
+    - name: fetch pyqtsnake from github
+      git:
+        repo: https://github.com/sigmaray/pyqtsnake.git
+        dest: "{{ ansible_env.HOME }}/r/stable/pyqtsnake"
+
+    - name: pip install
+      pip:
+        requirements: "{{ ansible_env.HOME }}/r/stable/pyqtsnake/requirements.txt"
+        # virtualenv: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch/.venv"
