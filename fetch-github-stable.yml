@@ -9,4 +9,4 @@
     - name: fetch from github
       git:
         repo: https://github.com/sigmaray/pyqtstopwatch.git
-        dest: "{{ ansible_env.HOME }}/r/stable"
+        dest: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch"
