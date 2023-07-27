@@ -1,0 +1,6 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install Dropbox via downloadable deb
+      apt:
+        deb: https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2022.12.05_amd64.deb
