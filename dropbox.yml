@@ -1,10 +1,6 @@
 - hosts: localhost
   become: true
   tasks:
-    - name: Install Dropbox dependency
-      apt:
-        pkg:
-          - libgtk-4-1
     - name: Install Dropbox via downloadable deb
       apt:
-        deb: https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2022.12.05_amd64.deb
+        deb: https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
