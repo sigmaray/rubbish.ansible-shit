@@ -10,4 +10,5 @@
 - import_playbook: slack.yml
 - import_playbook: zoom.yml
 - import_playbook: viber.yml
+- import_playbook: dropbox.yml
 - import_playbook: vscode.yml

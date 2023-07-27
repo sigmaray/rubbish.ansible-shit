@@ -34,6 +34,9 @@ general:
 viber:
 	ansible-playbook viber.yml --ask-become-pass
 
+dropbox:
+	ansible-playbook dropbox.yml --ask-become-pass
+
 zoom:
 	ansible-playbook zoom.yml --ask-become-pass
 
