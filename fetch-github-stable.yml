@@ -24,4 +24,14 @@
     - name: pip install
       pip:
         requirements: "{{ ansible_env.HOME }}/r/stable/pyqtsnake/requirements.txt"
-        # virtualenv: "{{ ansible_env.HOME }}/r/stable/pyqtstopwatch/.venv"
+        # virtualenv: "{{ ansible_env.HOME }}/r/stable/pyqtsnake/.venv"
+
+    - name: fetch multistopwatch from github
+      git:
+        repo: https://github.com/sigmaray/multistopwatch.git
+        dest: "{{ ansible_env.HOME }}/r/stable/multistopwatch"
+
+    - name: pip install
+      pip:
+        requirements: "{{ ansible_env.HOME }}/r/stable/multistopwatch/requirements.txt"
+        # virtualenv: "{{ ansible_env.HOME }}/r/stable/multistopwatch/.venv"
