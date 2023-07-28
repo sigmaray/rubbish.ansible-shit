@@ -10,6 +10,9 @@ install-deps:
 all:
 	ansible-playbook all.yml --ask-become-pass
 
+etckeeper:
+	ansible-playbook etckeeper.yml --ask-become-pass
+
 docker-ubuntu:
 	ansible-playbook docker-ubuntu.yml --ask-become-pass
 
