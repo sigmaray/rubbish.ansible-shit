@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: true
+
+  tasks:
+    - name: Install required system packages
+      apt:
+        pkg:
+          - flatpak
+        state: latest
+        update_cache: true
+
+    - name: Add flathub
+      shell: >
+        flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      args:
+        executable: /bin/bash

@@ -10,8 +10,11 @@ install-deps:
 all:
 	ansible-playbook all.yml --ask-become-pass
 
-docker:
-	ansible-playbook docker.yml --ask-become-pass
+docker-ubuntu:
+	ansible-playbook docker-ubuntu.yml --ask-become-pass
+
+flatpak-debian:
+	ansible-playbook flatpak-debian.yml --ask-become-pass
 
 chrome:
 	ansible-playbook chrome.yml --ask-become-pass
