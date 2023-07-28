@@ -1,0 +1,8 @@
+- name: Install VirtualBox
+  hosts: all
+  strategy: free
+  serial:
+    - "100%"
+  roles:
+    - don_rumata.ansible_role_install_virtualbox
+  # tasks:

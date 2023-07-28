@@ -31,6 +31,9 @@ vscode:
 slack:
 	ansible-playbook slack.yml --ask-become-pass
 
+virtualbox-debian:
+	ansible-playbook virtualbox-debian.yml --ask-become-pass
+
 general:
 	ansible-playbook general.yml --ask-become-pass
 
