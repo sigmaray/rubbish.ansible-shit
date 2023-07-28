@@ -24,7 +24,11 @@
         - deluge
         - ncdu
         - remmina
-        - virtualbox
+        - bash-completion # for debian
+        - docker # +
+        - docker-compose # +
+        - podman
+        # - virtualbox # doesn't work in debian
         # - virtualbox—ext–pack
         # - pgadmin3 
         # - mysql-workbench
