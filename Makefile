@@ -8,7 +8,7 @@ install-deps:
 	ansible-galaxy install -r requirements.yml
 
 all:
-	ansible-playbook all.yml --ask-become-pass
+	ansible-playbook all.yml # --ask-become-pass
 
 etckeeper:
 	ansible-playbook etckeeper.yml --ask-become-pass
